@@ -73,7 +73,9 @@ const HomeScreen = () => {
             to='/product/single'
             className='product__display--read__more--link'
           >
-              <span className="product__display--read__more--text">View More</span>
+            <span className='product__display--read__more--text'>
+              View More
+            </span>
           </Link>
         </div>
       </section>
@@ -89,6 +91,10 @@ const HomeScreen = () => {
                 </h2>
               </div>
               <div className='right__content'>
+                <span className='button__span--top white__stroke'></span>
+                <span className='button__span--right white__stroke'></span>
+                <span className='button__span--left white__stroke'></span>
+                <span className='button__span--bottom white__stroke'></span>
                 <a href='#' className='right__content--link'>
                   Shop Now
                 </a>
