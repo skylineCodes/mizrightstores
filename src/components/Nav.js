@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavItem from './NavItem';
 import {
   UilHome,
@@ -14,21 +15,21 @@ const Nav = () => {
     return (
       <header className='nav__header'>
         <nav className='nav container'>
-          <a href='#' className='nav__link'>
+          <Link to='/' className='nav__link'>
             <NavItem title='Home' Icon={UilHome} />
-          </a>
-          <a href='#' className='nav__link'>
+          </Link>
+          <Link to='/category' className='nav__link'>
             <NavItem title='Category' Icon={UilBars} />
-          </a>
-          <a href='#' className='nav__link'>
+          </Link>
+          <Link to='/search' className='nav__link'>
             <NavItem title='Search' Icon={UilSearch} />
-          </a>
-          <a href='#' className='nav__link'>
+          </Link>
+          <Link to='/cart' className='nav__link'>
             <NavItem title='Cart' Icon={UilShoppingCart} />
-          </a>
-          <a href='#' className='nav__link'>
+          </Link>
+          <Link to='/account' className='nav__link'>
             <NavItem title='Account' Icon={UilUser} />
-          </a>
+          </Link>
         </nav>
       </header>
     );

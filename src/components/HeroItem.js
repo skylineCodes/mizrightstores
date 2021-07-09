@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/homepage.css';
 
-const HomePageItem = ({ title, image, textAlign, left, right }) => {
+const HeroItem = ({ title, image, textAlign, left, right }) => {
   return (
     <div className='card'>
       <img src={process.env.PUBLIC_URL + image} className='image__bg' />
@@ -22,9 +22,9 @@ const HomePageItem = ({ title, image, textAlign, left, right }) => {
   );
 };
 
-HomePageItem.defaultProps = {
+HeroItem.defaultProps = {
   left: '34',
   right: 'auto'
 };
 
-export default HomePageItem
+export default HeroItem

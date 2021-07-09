@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   UilShoppingCart,
 } from '@iconscout/react-unicons';
@@ -11,9 +12,9 @@ const Header = () => {
     return (
       <div className='header'>
         <div className='logo__div'>
-          <a href='#' className='logo__link'>
+          <Link to='/' className='logo__link'>
             <img src={logo} alt='' className='logo' />
-          </a>
+          </Link>
         </div>
         <div className='cart__div'>
           <UilShoppingCart size='35' color='#000' />
