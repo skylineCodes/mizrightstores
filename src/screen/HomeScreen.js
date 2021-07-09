@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CategoryItem from '../components/CategoryItem';
 import HeroItem from '../components/HeroItem';
 import Product from '../components/Product';
 
@@ -95,16 +96,22 @@ const HomeScreen = () => {
                 <span className='button__span--right white__stroke'></span>
                 <span className='button__span--left white__stroke'></span>
                 <span className='button__span--bottom white__stroke'></span>
-                <a href='#' className='right__content--link'>
+                <Link to='/product/single' className='right__content--link'>
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='collections'>
-        <h1>Collections</h1>
+      <section className='category__section'>
+        <div className='category__section--header'>
+          <span className='category__section--header-span'>New And Solid</span>
+          <h2 className='category__section--header-main'>Shop Category</h2>
+        </div>
+        <CategoryItem title='Kaftan' image='kaftan.jpg' />
+        <CategoryItem title='Ankara Gown' image='ankara-gown.jpeg' />
+        <CategoryItem title='Owambe' image='owambe.jpg' />
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.min.css';
@@ -21,7 +22,7 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
         >
           <SwiperSlide>
             <div className='product__card--image'>
-              <a href='https://www.google.com'>
+              <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageOne}
                   alt=''
@@ -29,12 +30,12 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   height='500'
                   className='image'
                 />
-              </a>
+              </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='product__card--image'>
-              <a href='https://www.google.com'>
+              <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageTwo}
                   alt=''
@@ -42,12 +43,12 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   height='500'
                   className='image'
                 />
-              </a>
+              </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='product__card--image'>
-              <a href='https://www.google.com'>
+              <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageThree}
                   alt=''
@@ -55,13 +56,15 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   height='500'
                   className='image'
                 />
-              </a>
+              </Link>
             </div>
           </SwiperSlide>
         </Swiper>
         <div className='product__card--content'>
           <h4 className='title__text'>
-            <a href='https://www.google.com'>{title}</a>
+            <Link to='https://www.google.com'>
+              {title}
+            </Link>
           </h4>
           <div className='product__card--price'>
             <span className='product__card--amount'>
@@ -70,7 +73,10 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
             </span>
           </div>
         </div>
-        <a href='https://www.google.com' className='product__card--link'></a>
+        <Link
+          to='https://www.google.com'
+          className='product__card--link'
+        ></Link>
       </div>
     );
 }
