@@ -7,10 +7,10 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 349; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 97%, 41%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -52,39 +52,75 @@
 
     /*========== z index ==========*/
     --z-tooltip: 10;
-    --z-fixed: 100;
+    --z-fixed: 999999;
     --z-modal: 100;
 }
 
-/*==================== BASE ====================*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
 
-html {
-    scroll-behavior: smooth;
+/*==================== LAYOUT ====================*/
+.nav__header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+  
+/*==================== NAV ====================*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    flex: 1;
 }
 
-body {
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-    overflow-x: hidden !important;
+.nav__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* h1, h2, h3, h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-} */
-
-ul {
-    list-style: none;
+.nav__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
 }
 
-a {
-    text-decoration: none;
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+
 }
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {}
