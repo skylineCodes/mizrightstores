@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { UilHeadphonesAlt, UilCreditCard } from '@iconscout/react-unicons';
 import ReplyOutlinedIcon from '@material-ui/icons/ReplyOutlined';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
@@ -7,7 +8,15 @@ import CategoryItem from '../components/CategoryItem';
 import HeroItem from '../components/HeroItem';
 import Product from '../components/Product';
 
+import 'swiper/swiper.min.css';
+import 'swiper/components/pagination/pagination.min.css';
+
 import '../styles/homepage.css';
+
+import SwiperCore, { Pagination } from 'swiper/core';
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 const HomeScreen = () => {
   return (
@@ -194,6 +203,49 @@ const HomeScreen = () => {
           </div>
         </div>
       </section>
+      <hr className='line__breaker container' />
+      <section className='testimonial__section container'>
+        <h1 className='testimonial__section--header'>
+          What Our Clients Are Saying
+        </h1>
+        <Swiper
+          pagination={true}
+          loop={true}
+          className='mySwiper testimonial__card'
+        >
+          <SwiperSlide className='testimonial__card--div'>
+            <p className='testimonial__card--paragraph'>
+              Ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              perferendis maiores, ipsam accusantium quidem accusamus itaque
+              molestias a atque minus dolore, aperiam cumque impedit odio
+              facilis suscipit at neque eaque.
+            </p>
+            <h5 className='testimonial__card--name'>Korede O,</h5>
+            <small className='testimonial__card--state'>Osogbo</small>
+          </SwiperSlide>
+          <SwiperSlide className='testimonial__card--div'>
+            <p className='testimonial__card--paragraph'>
+              Ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              perferendis maiores, ipsam accusantium quidem accusamus itaque
+              molestias a atque minus dolore, aperiam cumque impedit odio
+              facilis suscipit at neque eaque.
+            </p>
+            <h5 className='testimonial__card--name'>Luqman O,</h5>
+            <small className='testimonial__card--state'>Osogbo</small>
+          </SwiperSlide>
+          <SwiperSlide className='testimonial__card--div'>
+            <p className='testimonial__card--paragraph'>
+              Ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              perferendis maiores, ipsam accusantium quidem accusamus itaque
+              molestias a atque minus dolore, aperiam cumque impedit odio
+              facilis suscipit at neque eaque.
+            </p>
+            <h5 className='testimonial__card--name'>Mutiat O,</h5>
+            <small className='testimonial__card--state'>Osogbo</small>
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      <hr className='line__breaker container' />
     </>
   );
 };
