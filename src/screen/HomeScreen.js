@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { UilHeadphonesAlt, UilCreditCard } from '@iconscout/react-unicons';
+import ReplyOutlinedIcon from '@material-ui/icons/ReplyOutlined';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import CategoryItem from '../components/CategoryItem';
 import HeroItem from '../components/HeroItem';
 import Product from '../components/Product';
@@ -69,6 +72,27 @@ const HomeScreen = () => {
           title='Velvet'
           price='10,500'
         />
+        <Product
+          imageOne='/velvet.jpg'
+          imageTwo='/velvet-1.jpg'
+          imageThree='/velvet-2.jpg'
+          title='Velvet'
+          price='10,500'
+        />
+        <Product
+          imageOne='/velvet.jpg'
+          imageTwo='/velvet-1.jpg'
+          imageThree='/velvet-2.jpg'
+          title='Velvet'
+          price='10,500'
+        />
+        <Product
+          imageOne='/velvet.jpg'
+          imageTwo='/velvet-1.jpg'
+          imageThree='/velvet-2.jpg'
+          title='Velvet'
+          price='10,500'
+        />
         <div className='product__display--read__more'>
           <Link
             to='/product/single'
@@ -81,7 +105,7 @@ const HomeScreen = () => {
         </div>
       </section>
       <section className='banner__section'>
-        <div className='banner__container'>
+        <div className='container'>
           <div className='banner__div'>
             <div className='banner__content'>
               <div className='left__content'>
@@ -112,6 +136,63 @@ const HomeScreen = () => {
         <CategoryItem title='Kaftan' image='kaftan.jpg' />
         <CategoryItem title='Ankara Gown' image='ankara-gown.jpeg' />
         <CategoryItem title='Owambe' image='owambe.jpg' />
+      </section>
+      <hr className='line__breaker container' />
+      <section className='feature__section'>
+        <div className='feature__section--one'>
+          <div className='feature__box'>
+            <UilHeadphonesAlt className='svg' size='45' />
+            <div className='feature__box--content'>
+              <h3 className='feature__box--header'>Customer Assistance</h3>
+              <h5>Need Assistance?</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                nec vestibulum magna, et dapib.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='feature__section--two'>
+          <div className='feature__box'>
+            <UilCreditCard className='svg' size='45' />
+            <div className='feature__box--content'>
+              <h3 className='feature__box--header'>Secured Payment</h3>
+              <h5>Safe & Fast</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                nec vestibulum magna, et dapib.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='feature__section--three'>
+          <div className='feature__box'>
+            <ReplyOutlinedIcon className='svg' style={{ fontSize: 45 }} />
+            <div className='feature__box--content'>
+              <h3 className='feature__box--header'>Free Returns</h3>
+              <h5>Easy & Free</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                nec vestibulum magna, et dapib.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='feature__section--four'>
+          <div className='feature__box'>
+            <LocalShippingIcon className='svg' style={{ fontSize: 45 }} />
+            <div className='feature__box--content'>
+              <h3 className='feature__box--header'>Free Shipping</h3>
+              <h5>
+                Order above <span className='currency'>&#8358;</span>15,000
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                nec vestibulum magna, et dapib.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

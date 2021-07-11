@@ -14,7 +14,7 @@ import '../styles/nav.css';
 const Nav = () => {
     return (
       <header className='nav__header'>
-        <nav className='nav container'>
+        <nav className='nav'>
           <Link to='/' className='nav__link'>
             <NavItem title='Home' Icon={UilHome} />
           </Link>
