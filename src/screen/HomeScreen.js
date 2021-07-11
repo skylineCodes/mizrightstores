@@ -245,7 +245,6 @@ const HomeScreen = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <hr className='line__breaker container' />
     </>
   );
 };

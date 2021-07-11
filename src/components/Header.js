@@ -4,7 +4,6 @@ import {
   UilShoppingCart,
 } from '@iconscout/react-unicons';
 
-
 import logo from '../mizright.png';
 import '../styles/header.css';
 
