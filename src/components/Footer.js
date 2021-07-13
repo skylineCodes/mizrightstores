@@ -6,9 +6,7 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { Accordion, Card } from 'react-bootstrap';
 import '../styles/footer.css';
-import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 import { Link } from 'react-router-dom';
 
 import logo from '../mizright.png';
@@ -156,7 +154,7 @@ const Footer = () => {
             <div className='logo_div'>
               <span className='logo'>
                 <Link href='/'>
-                  <img src={logo} alt='logo' className='image' />
+                  <img src={logo} alt='logo' className='logo__image' />
                 </Link>
               </span>
               <p className='copywrite'>&copy; Mizright Ltd. 2021</p>
@@ -233,7 +231,7 @@ const Footer = () => {
                     <img
                       src='../images/logos.jpg'
                       alt='logo'
-                      className="image}
+                      className="logo__image}
                     />
                   </Link>
                 </span>
