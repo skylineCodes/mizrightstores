@@ -7,21 +7,27 @@ import 'swiper/components/pagination/pagination.min.css';
 
 import '../styles/product.css';
 
-import SwiperCore, { Pagination } from 'swiper/core';
+import SwiperCore, { Pagination, Mousewheel, Keyboard } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Mousewheel, Keyboard]);
 
 const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
     return (
       <div className='product__body'>
         <Swiper
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          mousewheel={true}
+          keyboard={true}
+          cssMode={true}
           loop={true}
           className='mySwiper product__card'
         >
-          <SwiperSlide className='product__card--image'>
-            {/* <div> */}
+          <SwiperSlide>
+            <div className='product__card--image'>
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageOne}
@@ -31,10 +37,10 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            {/* </div> */}
+            </div>
           </SwiperSlide>
-          <SwiperSlide className='product__card--image'>
-            {/* <div> */}
+          <SwiperSlide>
+            <div className='product__card--image'>
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageTwo}
@@ -44,10 +50,10 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            {/* </div> */}
+            </div>
           </SwiperSlide>
-          <SwiperSlide className='product__card--image'>
-            {/* <div> */}
+          <SwiperSlide>
+            <div className='product__card--image'>
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageThree}
@@ -57,7 +63,7 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            {/* </div> */}
+            </div>
           </SwiperSlide>
         </Swiper>
         <div className='product__card--content'>

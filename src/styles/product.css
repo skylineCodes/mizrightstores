@@ -91,23 +91,85 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
-
+    .product__body .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
-
+    .product__body .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    /* .product__body {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: auto;
-    } */
+    .product__body .swiper-container {
+        width: 50vw;
+        height: 100%;
+    }
+
+    .product__body .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-    
+    .product__body .swiper-container {
+        width: calc(100vw / 3);
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }

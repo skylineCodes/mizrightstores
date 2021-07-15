@@ -60,249 +60,63 @@ const HomeScreen = () => {
         />
       </section>
       <section className='product__display'>
-        {/* <div className='products__div'> */}
-        {/* <div className=''> */}
-        <div className='product__body'>
-          <Swiper
-            pagination={true}
-            loop={true}
-            className='mySwiper product__card'
-          >
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-1.png'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-2.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-3.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-          </Swiper>
-          <div className='product__card--content'>
-            <h4 className='title__text'>
-              <Link to='https://www.google.com'>Lycra</Link>
-            </h4>
-            <div className='product__card--price'>
-              <span className='product__card--amount'>
-                <span className='currency'>&#8358;</span>
-                2,500
-              </span>
-            </div>
-          </div>
-          <Link
-            to='https://www.google.com'
-            className='product__card--link'
-          ></Link>
-        </div>
-        {/* <Product
+        <div className='product__collection'>
+          <div className='product__item--div'>
+            <Product
               imageOne='/checkers-1.png'
               imageTwo='/checkers-2.jpg'
               imageThree='/checkers-3.jpg'
               title='Lycra'
               price='2,500'
-            /> */}
-        {/* </div> */}
-        {/* <div className=''> */}
-        {/* <Product
+            />
+          </div>
+          <div className='product__item--div'>
+            <Product
               imageOne='/red-top.jpg'
               imageTwo='/red-top-1.jpg'
               imageThree='/red-top-2.jpg'
               title='Silk'
               price='4,500'
-            /> */}
-        <div className='product__body'>
-          <Swiper
-            pagination={true}
-            loop={true}
-            className='mySwiper product__card'
-          >
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-1.png'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-2.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-3.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-          </Swiper>
-          <div className='product__card--content'>
-            <h4 className='title__text'>
-              <Link to='https://www.google.com'>Lycra</Link>
-            </h4>
-            <div className='product__card--price'>
-              <span className='product__card--amount'>
-                <span className='currency'>&#8358;</span>
-                2,500
-              </span>
-            </div>
+            />
           </div>
-          <Link
-            to='https://www.google.com'
-            className='product__card--link'
-          ></Link>
-        </div>
-        {/* </div> */}
-        {/* <div className=''> */}
-        {/* <Product
+          <div className='product__item--div'>
+            <Product
               imageOne='/velvet.jpg'
               imageTwo='/velvet-1.jpg'
               imageThree='/velvet-2.jpg'
               title='Velvet'
               price='10,500'
-            /> */}
-        <div className='product__body'>
-          <Swiper
-            pagination={true}
-            loop={true}
-            className='mySwiper product__card'
-          >
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-1.png'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-2.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide className='product__card--image'>
-              {/* <div> */}
-              <Link to='https://www.google.com'>
-                <img
-                  src={process.env.PUBLIC_URL + '/checkers-3.jpg'}
-                  alt=''
-                  width='660'
-                  height='500'
-                  className='image'
-                />
-              </Link>
-              {/* </div> */}
-            </SwiperSlide>
-          </Swiper>
-          <div className='product__card--content'>
-            <h4 className='title__text'>
-              <Link to='https://www.google.com'>Lycra</Link>
-            </h4>
-            <div className='product__card--price'>
-              <span className='product__card--amount'>
-                <span className='currency'>&#8358;</span>
-                2,500
-              </span>
-            </div>
+            />
           </div>
-          <Link
-            to='https://www.google.com'
-            className='product__card--link'
-          ></Link>
+          <div className='product__item--div'>
+            <Product
+              imageOne='/velvet.jpg'
+              imageTwo='/velvet-1.jpg'
+              imageThree='/velvet-2.jpg'
+              title='Velvet'
+              price='10,500'
+            />
+          </div>
+          <div className='product__item--div'>
+            <Product
+              imageOne='/velvet.jpg'
+              imageTwo='/velvet-1.jpg'
+              imageThree='/velvet-2.jpg'
+              title='Velvet'
+              price='10,500'
+            />
+          </div>
+          <div className='product__item--div'>
+            <Product
+              imageOne='/velvet.jpg'
+              imageTwo='/velvet-1.jpg'
+              imageThree='/velvet-2.jpg'
+              title='Velvet'
+              price='10,500'
+            />
+          </div>
         </div>
-        {/* </div> */}
-        {/* <div className=''>
-            <Product
-              imageOne='/velvet.jpg'
-              imageTwo='/velvet-1.jpg'
-              imageThree='/velvet-2.jpg'
-              title='Velvet'
-              price='10,500'
-            />
-          </div> */}
-        {/* <div className=''>
-            <Product
-              imageOne='/velvet.jpg'
-              imageTwo='/velvet-1.jpg'
-              imageThree='/velvet-2.jpg'
-              title='Velvet'
-              price='10,500'
-            />
-          </div> */}
-        {/* <div className=''>
-            <Product
-              imageOne='/velvet.jpg'
-              imageTwo='/velvet-1.jpg'
-              imageThree='/velvet-2.jpg'
-              title='Velvet'
-              price='10,500'
-            />
-          </div> */}
-        {/* </div> */}
-        {/* <div className='product__display--read__more'>
+        <div className='product__display--read__more'>
           <Link
             to='/product/single'
             className='product__display--read__more--link'
@@ -311,7 +125,7 @@ const HomeScreen = () => {
               View More
             </span>
           </Link>
-        </div> */}
+        </div>
       </section>
       <section className='banner__section'>
         <div className='container'>
