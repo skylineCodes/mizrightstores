@@ -181,77 +181,77 @@ const Footer = () => {
           </div>
         </footer>
       </section>
-      {/* <section className="footer_section}>
-        <footer className="footer}>
-          <div className="container}>
-            <div className="footer_top}>
-              <div className="headerone}>
-                <div className="mainText_div}>
-                  <h6 className="mainText}>Mizright</h6>
+      <section className="footer_section">
+        <footer className="footer">
+          <div className="container">
+            <div className="footer_top">
+              <div className="headerone">
+                <div className="mainText_div">
+                  <h6 className="mainText">Mizright</h6>
                 </div>
-                <div className="subtext_div}>
-                  <ul className="subtext_wrapper}>
-                    <li className="subtext}>Customer Stories</li>
-                    <li className="subtext}>Pricing</li>
-                    <li className="subtext}>About Us</li>
+                <div className="subtext_div">
+                  <ul className="subtext_wrapper">
+                    <li className="subtext">Customer Stories</li>
+                    <li className="subtext">Pricing</li>
+                    <li className="subtext">About Us</li>
                   </ul>
                 </div>
               </div>
-              <div className="headertwo}>
-                <div className="mainText_div}>
-                  <h6 className="mainText}>Resources</h6>
+              <div className="headertwo">
+                <div className="mainText_div">
+                  <h6 className="mainText">Resources</h6>
                 </div>
-                <div className="subtext_div}>
-                  <ul className="subtext_wrapper}>
-                    <li className="subtext}>Blog</li>
-                    <li className="subtext}>Customer Support</li>
-                    <li className="subtext}>How It Works</li>
+                <div className="subtext_div">
+                  <ul className="subtext_wrapper">
+                    <li className="subtext">Blog</li>
+                    <li className="subtext">Customer Support</li>
+                    <li className="subtext">How It Works</li>
                   </ul>
                 </div>
               </div>
-              <div className="headerthree}>
-                <div className="mainText_div}>
-                  <h6 className="mainText}>Compliance</h6>
+              <div className="headerthree">
+                <div className="mainText_div">
+                  <h6 className="mainText">Compliance</h6>
                 </div>
-                <div className="subtext_div}>
-                  <ul className="subtext_wrapper}>
-                    <li className="subtext}>Terms of service</li>
-                    <li className="subtext}>Privacy policy</li>
-                    <li className="subtext}>
+                <div className="subtext_div">
+                  <ul className="subtext_wrapper">
+                    <li className="subtext">Terms of service</li>
+                    <li className="subtext">Privacy policy</li>
+                    <li className="subtext">
                       Compliance, legal and security
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="footer_bottom}>
-              <div className="logo_div}>
-                <span className="logo}>
+            <div className="footer_bottom">
+              <div className="logo_div">
+                <span className="logo">
                   <Link href='/'>
                     <img
-                      src='../images/logos.jpg'
+                      src={logo}
                       alt='logo'
-                      className="logo__image}
+                      className="logo__image"
                     />
                   </Link>
                 </span>
-                <p className="copywrite}>
+                <p className="copywrite">
                   &copy; Mizright Ltd. 2021
                 </p>
               </div>
-              <div className="links_div}>
-                <ul className="links_wrapper}>
-                  <li className="links}>
+              <div className="links_div">
+                <ul className="links_wrapper">
+                  <li className="links">
                     <span>
                       <FontAwesomeIcon icon={faInstagram} />
                     </span>
                   </li>
-                  <li className="links}>
+                  <li className="links">
                     <span>
                       <FontAwesomeIcon icon={faFacebookF} />
                     </span>
                   </li>
-                  <li className="links}>
+                  <li className="links">
                     <span>
                       <FontAwesomeIcon icon={faTwitter} />
                     </span>
@@ -261,7 +261,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-      </section> */}
+      </section>
     </>
   );
 };

@@ -20,8 +20,8 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
           loop={true}
           className='mySwiper product__card'
         >
-          <SwiperSlide>
-            <div className='product__card--image'>
+          <SwiperSlide className='product__card--image'>
+            {/* <div> */}
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageOne}
@@ -31,10 +31,10 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            </div>
+            {/* </div> */}
           </SwiperSlide>
-          <SwiperSlide>
-            <div className='product__card--image'>
+          <SwiperSlide className='product__card--image'>
+            {/* <div> */}
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageTwo}
@@ -44,10 +44,10 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            </div>
+            {/* </div> */}
           </SwiperSlide>
-          <SwiperSlide>
-            <div className='product__card--image'>
+          <SwiperSlide className='product__card--image'>
+            {/* <div> */}
               <Link to='https://www.google.com'>
                 <img
                   src={process.env.PUBLIC_URL + imageThree}
@@ -57,14 +57,12 @@ const Product = ({ imageOne, imageTwo, imageThree, title, price }) => {
                   className='image'
                 />
               </Link>
-            </div>
+            {/* </div> */}
           </SwiperSlide>
         </Swiper>
         <div className='product__card--content'>
           <h4 className='title__text'>
-            <Link to='https://www.google.com'>
-              {title}
-            </Link>
+            <Link to='https://www.google.com'>{title}</Link>
           </h4>
           <div className='product__card--price'>
             <span className='product__card--amount'>
