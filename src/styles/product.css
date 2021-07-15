@@ -108,7 +108,7 @@
 @media screen and (min-width: 768px) {
     .product__body .swiper-container {
         width: 50vw;
-        height: 100%;
+        height: auto;
     }
 
     .product__body .swiper-slide {
@@ -143,7 +143,7 @@
 @media screen and (min-width: 1024px) {
     .product__body .swiper-container {
         width: calc(100vw / 3);
-        height: 100%;
+        height: auto;
     }
 
     .swiper-slide {
