@@ -85,7 +85,7 @@ const Footer = () => {
                     toggleAccordion(1);
                   }}
                 >
-                  <h6 className='header'>Mizright</h6>
+                  <h6 className='footer__header'>Mizright</h6>
                   <span className='icon'>
                     <FontAwesomeIcon icon={faAngleDown} />{' '}
                   </span>
@@ -108,7 +108,7 @@ const Footer = () => {
                     toggleAccordion(2);
                   }}
                 >
-                  <h6 className='header'>Resources</h6>
+                  <h6 className='footer__header'>Resources</h6>
                   <span className='icon'>
                     <FontAwesomeIcon icon={faAngleDown} />{' '}
                   </span>
@@ -131,7 +131,7 @@ const Footer = () => {
                     toggleAccordion(3);
                   }}
                 >
-                  <h6 className='header'>Compliance</h6>
+                  <h6 className='footer__header'>Compliance</h6>
                   <span className='icon'>
                     <FontAwesomeIcon icon={faAngleDown} />{' '}
                   </span>
